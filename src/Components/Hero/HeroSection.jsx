@@ -5,7 +5,7 @@ import { TbStars } from "react-icons/tb";
 
 const HeroSection = () => {
     return (
-        <section id='Home' className='relative flex flex-col lg:flex-row min-h-screen w-full overflow-hidden bg-gradient-to-b from-gray-300 to-amber-200 sm:pt-0 pb-8 '>
+        <section id='Home' className='relative flex flex-col lg:flex-row min-h-screen w-full overflow-hidden bg-gradient-to-b from-gray-300 to-amber-200 sm:pt-0 pb-8 md:px-10'>
 
             {/* Background Blur */}
             <div className='absolute top-0 left-0 h-72 w-72 rounded-full bg-amber-300/30 blur-3xl'></div>

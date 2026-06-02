@@ -3,7 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import { HiMiniShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2, TbMenu3 } from "react-icons/tb";
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
 
@@ -14,7 +14,7 @@ const Navbar = () => {
 
             <nav className='
                 flex items-center justify-between
-                px-5 sm:px-10
+                px-5 sm:px-20
                 py-4
                 bg-white/70 backdrop-blur-xl
                 shadow-md
@@ -83,17 +83,49 @@ const Navbar = () => {
 
                 <ul className='flex flex-col gap-5 p-6 text-base font-medium'>
 
-                   <li><Link to="/">Home</Link></li>
+                    <NavLink
+                        to="/"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        Home
+                    </NavLink>
 
-                    <li><Link to="/about">About</Link></li>
+                    {/* <li><Link to="/about">About</Link></li> */}
 
-                    <li><Link to="/category">Category</Link></li>
+                    <NavLink
+                        to="/about"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        About
+                    </NavLink>
 
-                    <li>   <Link to="/products">Products</Link></li>
+                    <NavLink
+                        to="/category"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        Category
+                    </NavLink>
 
-                    <li><Link to="/feedback">Feedback</Link></li>
+                    <NavLink
+                        to="/products"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        Products
+                    </NavLink>
 
-                    <li><Link to="/contact">Contact</Link></li>
+                    <NavLink
+                        to="/feedback"
+                        onClick={() => setShowMenu(false)}
+                    >
+                       Feedback
+                    </NavLink>
+
+                    <NavLink
+                        to="/contact"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        Contact
+                    </NavLink>
 
                     {/* Mobile Search */}
                     <li className='flex items-center border rounded-xl px-3 py-2 bg-gray-50'>
