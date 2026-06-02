@@ -3,6 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import { HiMiniShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2, TbMenu3 } from "react-icons/tb";
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
@@ -13,7 +14,7 @@ const Navbar = () => {
 
             <nav className='
                 flex items-center justify-between
-                px-5 sm:px-20
+                px-5 sm:px-10
                 py-4
                 bg-white/70 backdrop-blur-xl
                 shadow-md
@@ -22,19 +23,24 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div>
-                  <a href="#Home">  <h1 className='text-xl sm:text-2xl font-bold'>
+                    <Link to="/"> <h1 className='text-xl sm:text-2xl font-bold'>
                         Sharma's <span className='text-amber-600'>Store</span>
-                    </h1></a>
+                    </h1> </Link>
                 </div>
 
                 {/* Desktop Menu */}
                 <ul className='hidden lg:flex gap-8 text-base font-medium'>
-                   <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Category">Category</a></li>
-                    <li><a href="#Products">Products</a></li>
-                    <li><a href="#Feedback">Feedback</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+
+                    <li><Link to="/about">About</Link></li>
+
+                    <li><Link to="/category">Category</Link></li>
+
+                    <li>   <Link to="/products">Products</Link></li>
+
+                    <li><Link to="/feedback">Feedback</Link></li>
+
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
 
                 {/* Right Side */}
@@ -77,12 +83,17 @@ const Navbar = () => {
 
                 <ul className='flex flex-col gap-5 p-6 text-base font-medium'>
 
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Category">Category</a></li>
-                    <li><a href="#Products">Products</a></li>
-                    <li><a href="#Feedback">Feedback</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                   <li><Link to="/">Home</Link></li>
+
+                    <li><Link to="/about">About</Link></li>
+
+                    <li><Link to="/category">Category</Link></li>
+
+                    <li>   <Link to="/products">Products</Link></li>
+
+                    <li><Link to="/feedback">Feedback</Link></li>
+
+                    <li><Link to="/contact">Contact</Link></li>
 
                     {/* Mobile Search */}
                     <li className='flex items-center border rounded-xl px-3 py-2 bg-gray-50'>

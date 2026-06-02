@@ -5,7 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const ProductSection1 = () => {
   return (
-    <section id='Category' className='relative w-full overflow-hidden bg-gradient-to-b from-amber-200 to-gray-300 py-16 px-4 sm:px-8 lg:px-14'>
+    <section id='Category' className='relative w-full overflow-hidden bg-gradient-to-b from-amber-200 to-gray-300 py-16 px-4 sm:px-8 lg:px-14 pt-35'>
 
       {/* Background Blur */}
       <div className='absolute top-0 left-0 h-72 w-72 rounded-full bg-amber-300/20 blur-3xl'></div>

@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const Products = () => {
     return (
-        <section id='Products' className='w-full bg-gradient-to-b from-gray-300 to-amber-200 py-10 px-3 sm:px-6 lg:px-10'>
+        <section id='Products' className='w-full bg-gradient-to-b from-gray-300 to-amber-200 py-10 px-3 sm:px-6 lg:px-10 pt-35'>
 
             {/* Heading */}
             <div className='mb-10 text-center'>

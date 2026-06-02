@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const ContactUs = () => {
     return (
-        <section id='Contact' className='w-full bg-gradient-to-b from-amber-200 to-gray-200 py-16 px-4 sm:px-8 lg:px-14'>
+        <section id='Contact' className='w-full bg-gradient-to-b from-amber-200 to-gray-200 py-16 px-4 sm:px-8 lg:px-14 pt-35'>
 
             <div
                 className='

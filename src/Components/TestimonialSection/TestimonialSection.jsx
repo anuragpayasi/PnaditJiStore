@@ -31,7 +31,7 @@ const testimonials = [
 
 const TestimonialSection = () => {
     return (
-        <section id='Feedback' className='w-full bg-gradient-to-b from-gray-300 to-amber-200 py-16 px-4 sm:px-8 lg:px-14'>
+        <section id='Feedback' className='w-full bg-gradient-to-b from-gray-300 to-amber-200 py-16 px-4 sm:px-8 lg:px-14 pt-35'>
 
             {/* Heading */}
             <div className='mb-12 text-center'>

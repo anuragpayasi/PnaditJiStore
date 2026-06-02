@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
     return (
-        <section id="About" className="w-full bg-gradient-to-b from-amber-200 to-gray-300 py-14 px-4 sm:px-8 lg:px-14">
+        <section id="About" className="w-full bg-gradient-to-b from-amber-200 to-gray-300 py-14 px-4 sm:px-8 lg:px-14 pt-35">
 
             {/* Main Container */}
             <div className="mx-auto max-w-7xl">
